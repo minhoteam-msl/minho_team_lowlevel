@@ -39,9 +39,9 @@ aS'-Ilib/TimerOne/config'
 p18
 aS'-Ilib/Omni3MD'
 p19
-aS'-I/usr/share/arduino/libraries/Wire'
+aS'-I/usr/share/arduino/libraries/Robot_Control'
 p20
-aS'-I/usr/share/arduino/libraries/Wire/utility'
+aS'-I/usr/share/arduino/libraries/Robot_Control/utility'
 p21
 aS'-I/usr/share/arduino/hardware/arduino/cores/arduino'
 p22
@@ -2195,7 +2195,7 @@ aS'lib/TimerOne'
 p1170
 aS'lib/Omni3MD'
 p1171
-aS'/usr/share/arduino/libraries/Wire'
+aS'/usr/share/arduino/libraries/Robot_Control'
 p1172
 aS'/usr/share/arduino/hardware/arduino/cores/arduino'
 p1173
@@ -2275,11 +2275,11 @@ aS'.build/mega2560/arduino/dependencies.d'
 p1214
 aS'.build/mega2560/Servo/dependencies.d'
 p1215
-aS'.build/mega2560/TimerOne/dependencies.d'
+aS'.build/mega2560/Robot_Control/dependencies.d'
 p1216
-aS'.build/mega2560/Omni3MD/dependencies.d'
+aS'.build/mega2560/TimerOne/dependencies.d'
 p1217
-aS'.build/mega2560/Wire/dependencies.d'
+aS'.build/mega2560/Omni3MD/dependencies.d'
 p1218
 atp1219
 Rp1220

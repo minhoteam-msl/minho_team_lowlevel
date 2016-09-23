@@ -6,7 +6,9 @@ sudo usermod -aG dialout $(whoami)
 echo "Added $(whoami) to dialout group"
 sleep 2
 echo Installing ino tools ...
-sudo apt-get -y install python-pip
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+LANG=C perl -e exit
 pip install ino
 sleep 2
 
