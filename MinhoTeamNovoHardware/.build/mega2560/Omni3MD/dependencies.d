@@ -1,5 +1,5 @@
 .build/mega2560/Omni3MD/Omni3MD.d .build/mega2560/Omni3MD/Omni3MD.o: lib/Omni3MD/Omni3MD.cpp \
- /usr/share/arduino/libraries/Robot_Control/Wire.h \
+ /usr/share/arduino/libraries/Wire/Wire.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/Stream.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/Print.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/WString.h \

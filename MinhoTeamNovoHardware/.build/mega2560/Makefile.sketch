@@ -6,7 +6,7 @@
 .build/mega2560/src/MinhoTeamNovoHardware.cpp : src/MinhoTeamNovoHardware.ino
 	@mkdir -p .build/mega2560/src
 	@echo [93msrc/MinhoTeamNovoHardware.ino[0m
-	@/home/lar/.local/bin/ino preproc  -o $@ $^
+	@/home/pedro/.local/bin/ino preproc  -o $@ $^
 
 
 all : .build/mega2560/src/MinhoTeamNovoHardware.cpp
