@@ -1,0 +1,3 @@
+#!/bin/bash
+#Copies libraries to arduino's sketchbook library directory
+cp -r ./libraries/* ~/sketchbook/libraries/

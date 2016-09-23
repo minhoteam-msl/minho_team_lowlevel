@@ -169,8 +169,12 @@ void loop() {
 
   if(Serial1.available()>0)
   {
-   String S1 = Serial1.readStringUntil('\n');
-   bussolaValor = S1.toFloat();
+   /*String S1 = Serial1.readStringUntil('\n');
+   bussolaValor = S1.toFloat();*/
+   String S1 = ""; 
+   char buffer[10];
+   S1.toCharArray(buffer, 10);
+   bussolaValor = atof(buffer);
    
    //debug
    #if defined(IMUDEBUG)
