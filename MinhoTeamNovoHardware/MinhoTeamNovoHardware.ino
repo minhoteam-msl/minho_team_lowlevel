@@ -107,6 +107,9 @@ unsigned long baterryLowPCTimeStamp = 0;
 int baterryLowCamLimitTime = 550;
 unsigned long baterryLowCamTimeStamp = 0;
 
+int comunicationTimeOutLimitTime = 200;
+unsigned long comunicationTimeOutTimeStamp = 0;
+
 boolean FreeWill = false;
 
 int servo01 = 180,servo02 = 120;
@@ -145,13 +148,18 @@ void setup() {
 
 void loop() {
   
-  
   if(analogRead(FreeWillButton)>500 && FreeWill==false){
     omni.stop_motors();
     FreeWill = true;
   }
   else if(analogRead(FreeWillButton)<500 && FreeWill==true){
     FreeWill = false;
+  }
+  
+  if(millis()-comunicationTimeOutTimeStamp>comunicationTimeOutLimitTime)
+  {
+    omni.stop_motors();
+    comunicationTimeOutTimeStamp = millis();
   }
   
   //debug
@@ -256,6 +264,8 @@ void loop() {
   if(Serial.available()>0)
   {
         String lido = Serial.readStringUntil('\n');
+        comunicationTimeOutTimeStamp = millis();
+     
         if(lido[0]=='A')
         {
           String lido2 = lido.substring(2, lido.indexOf('!'));

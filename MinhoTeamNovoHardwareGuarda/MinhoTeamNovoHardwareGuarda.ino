@@ -107,6 +107,9 @@ unsigned long baterryLowPCTimeStamp = 0;
 int baterryLowCamLimitTime = 550;
 unsigned long baterryLowCamTimeStamp = 0;
 
+int comunicationTimeOutLimitTime = 200;
+unsigned long comunicationTimeOutTimeStamp = 0;
+
 boolean FreeWill = false;
 
 int servo01 = 180,servo02 = 120;
@@ -149,6 +152,12 @@ void loop() {
   }
   else if(analogRead(FreeWillButton)<500 && FreeWill==true){
     FreeWill = false;
+  }
+  
+  if(millis()-comunicationTimeOutTimeStamp>comunicationTimeOutLimitTime)
+  {
+    omni.stop_motors();
+    comunicationTimeOutTimeStamp = millis();
   }
   
   //debug
