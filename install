@@ -1,5 +1,3 @@
 #!/bin/bash
-echo "Copying libraries to your arduino's directory"
-#Copies libraries to arduino's sketchbook library directory
-cp -r ./libraries/* ~/sketchbook/libraries/
-echo "Installation done"
+#This file installs arduino and ino tools
+

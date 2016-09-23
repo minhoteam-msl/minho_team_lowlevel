@@ -2,6 +2,15 @@
 ### Baudrate 115200
 ### Timeout 200ms
 
+##Installation
+* $ sudo chmod 777 install
+* $ ./install
+
+##Upload to board
+* $ sudo chmod 777 upload
+* $ ./upload <serial-port\>
+[Example ./upload /dev/ttyACM0]
+
 #Full packet (send) :
 Variable | Range
 ----------  | -------

@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ -z "$1" ]; then 
+	echo "You should provide a serial device port name."
+	exit
+else 
+	echo "Building and uploading to $1 ..."
+fi
+
+cd MinhoTeamNovoHardware &&
+ino clean &&
+ino build &&
+
+echo Build done correctly !
+
+ino upload -p $1
