@@ -8,6 +8,7 @@ Variable | Range
 linear_speed | (0->100)
 angular_speed | (-100->100)
 direction | (0->360)
+kick_type | Binary
 kick_strength | (0->25)
 enable_drib1 | Binary
 vel_drib1 | (0->255)
@@ -17,7 +18,7 @@ resetenc1 | Binary
 resetenc2 | Binary
 resetenc3 | Binary
 
-String : linear_speed,angular_speed,direction,kick_strength,enable_drib1,vel_drib1,enable_drib2,vel_drib2,resetenc1,resetenc2,resetenc3
+String : linear_speed,angular_speed,direction,kick_type,kick_strength,enable_drib1,vel_drib1,enable_drib2,vel_drib2,resetenc1,resetenc2,resetenc3
 
 
 #Full packet (receive) :

@@ -370,6 +370,11 @@ void loop() {
         {
           String chuto = lido.substring(2, lido.indexOf('\n'));
           int kickTime = chuto.toInt();
+          Serial.println("");
+          Serial.println("");
+          Serial.println(kickTime);
+          Serial.println("");
+          Serial.println("");
           if(kickTime>0)
           {
             if(kickTime>maxKick)kickTime = maxKick;
