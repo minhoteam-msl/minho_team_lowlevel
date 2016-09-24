@@ -1,4 +1,5 @@
-.build/mega2560/Servo/Servo.d .build/mega2560/Servo/Servo.o: /usr/share/arduino/libraries/Servo/Servo.cpp \
+.build/mega2560/arduino/HardwareSerial2.d .build/mega2560/arduino/HardwareSerial2.o: \
+ /usr/share/arduino/hardware/arduino/cores/arduino/HardwareSerial2.cpp \
  /usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/binary.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/WCharacter.h \
@@ -9,7 +10,5 @@
  /usr/share/arduino/hardware/arduino/cores/arduino/Printable.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/new.h \
  /usr/share/arduino/hardware/arduino/variants/mega/pins_arduino.h \
- /usr/share/arduino/libraries/Servo/Servo.h
-.build/mega2560/Servo/src/avr/Servo.d .build/mega2560/Servo/src/avr/Servo.o: /usr/share/arduino/libraries/Servo/src/avr/Servo.cpp
-.build/mega2560/Servo/src/samd/Servo.d .build/mega2560/Servo/src/samd/Servo.o: /usr/share/arduino/libraries/Servo/src/samd/Servo.cpp
-.build/mega2560/Servo/src/sam/Servo.d .build/mega2560/Servo/src/sam/Servo.o: /usr/share/arduino/libraries/Servo/src/sam/Servo.cpp
+ /usr/share/arduino/hardware/arduino/cores/arduino/HardwareSerial_private.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/wiring_private.h
